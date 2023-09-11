@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/razasListFragment">
+
+    <fragment
+        android:id="@+id/razasListFragment"
+        android:name="com.example.individual8_m6.presentation.RazasListFragment"
+        android:label="RazasListFragment" >
+        <action
+            android:id="@+id/action_razasListFragment_to_detailDogFragment"
+            app:destination="@id/detailDogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailDogFragment"
+        android:name="com.example.individual8_m6.presentation.DetailDogFragment"
+        android:label="DetailDogFragment" >
+        <action
+            android:id="@+id/action_detailDogFragment_to_razasListFragment"
+            app:destination="@id/razasListFragment" />
+    </fragment>
+</navigation>
